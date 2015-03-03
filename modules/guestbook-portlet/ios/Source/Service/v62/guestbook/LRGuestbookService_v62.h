@@ -21,6 +21,7 @@
 
 - (NSDictionary *)addGuestbookWithUserId:(long long)userId name:(NSString *)name serviceContext:(LRJSONObjectWrapper *)serviceContext error:(NSError **)error;
 - (NSDictionary *)deleteGuestbookWithGuestbookId:(long long)guestbookId serviceContext:(LRJSONObjectWrapper *)serviceContext error:(NSError **)error;
+- (NSDictionary *)getGuestbookByG_NWithGroupId:(long long)groupId name:(NSString *)name orderByComparator:(LRJSONObjectWrapper *)orderByComparator error:(NSError **)error;
 - (NSArray *)getGuestbooksWithGroupId:(long long)groupId error:(NSError **)error;
 - (NSArray *)getGuestbooksWithGroupId:(long long)groupId start:(int)start end:(int)end error:(NSError **)error;
 - (NSNumber *)getGuestbooksCountWithGroupId:(long long)groupId error:(NSError **)error;
