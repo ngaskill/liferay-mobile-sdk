@@ -11,3 +11,14 @@
  * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
  * details.
  */
+
+package com.liferay.mobile.android.util.download;
+
+/**
+ * @author Bruno Farache
+ */
+public interface DownloadProgressCallback {
+
+	public abstract void onProgress(int totalBytes);
+
+}
